@@ -102,7 +102,8 @@ https://documenter.getpostman.com/view/43688471/2sB2qXji4L
 <img width="708" alt="Screenshot 2025-05-19 at 4 51 54 AM" src="https://github.com/user-attachments/assets/39bc7d24-f6b8-4f1f-ad7e-94d115793c34" />
 <br><br>
 
-##Handling Invalid Request Types
+## Handling Invalid Request Types
+
 <img width="1025" alt="invalidpost" src="https://github.com/user-attachments/assets/d84c214c-184d-411e-863d-bf21f08fe7d4" />
 
 
