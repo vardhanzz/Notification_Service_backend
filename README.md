@@ -2,7 +2,7 @@
 
 ## Objective
 
-This project implements a **Notification Service** that allows sending notifications to users via multiple channels including **Email**, **SMS**, and **in-app** notifications. Notifications are processed asynchronously using a message queue (**RabbitMQ**), with retries for failed deliveries.
+This project implements a **Notification Service** that allows sending notifications to users via multiple channels, including **Email**, **SMS**, and **in-app** notifications. Notifications are processed asynchronously using a message queue (**RabbitMQ**), with retries for failed deliveries.
 
 ## Features
 
@@ -24,39 +24,39 @@ This project implements a **Notification Service** that allows sending notificat
 
 ### 1. Clone the repository
 
-bash
+```bash
 git clone https://github.com/vardhanzz/Notification_Service_backend.git
 cd Notification_Service_backend
-
+```
 ### 2. Start RabbitMQ server using Docker
-bash
+```bash
 docker run -d --hostname my-rabbit --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
-
+```
 This will start RabbitMQ and expose:<br>
 1. Port 5672 for AMQP connections<br>
 2. Port 15672 for RabbitMQ management UI (http://localhost:15672, default user/pass: guest / guest)<br>
 
 ### 3. Install dependencies
-bash
+```bash
 npm install express amqplib
-
+```
 ### 4. Configure Environment Variables
-bash
+```bash
 RABBITMQ_URL=amqp://guest:guest@localhost:5672/
 PORT=3000
-
+```
 ### 5.Run the Notification Consumer
-bash
+```bash
 cd consumer
 node notificationConsumer.js
-
+```
 ### 6.Start the Express API Server
-bash
+```bash
 node index.js
-
+```
 ## API Usage
   ### Send a Notification 
-  bash
+ ``` bash
   POST /notifications
 Content-Type: application/json
 
@@ -65,11 +65,11 @@ Content-Type: application/json
   "type": "Email",        // "Email" | "SMS" | "in-app"
   "message": "Your message here"
 }
-
+```
 ### Get User Notifications
-bash
+```bash
   GET /users/{id}/notifications
-
+```
 ## Retry Mechanism
 Failed notifications will be automatically retried. When a failure occurs, the message is re-queued up to a maximum retry count (defined in the consumer). This ensures reliable delivery even if transient errors happen.
 
