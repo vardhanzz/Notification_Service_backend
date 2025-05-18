@@ -103,7 +103,7 @@ Content-Type: <code>application/json</code>
 <br>
 
 Example body:
-<cod>
+<code>
 {
   "user": "user-id-123",
   "type": "Email",        // Allowed types: "Email" | "SMS" | "in-app"
