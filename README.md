@@ -81,3 +81,25 @@ Failed notifications will be automatically retried. When a failure occurs, the m
 ## Here is the link to the detailed API documentation  that is available on Postman:
 https://documenter.getpostman.com/view/43688471/2sB2qXji4L
   <br><br><br><br>
+
+##Sending a Notification (POST Request)
+<img width="1024" alt="postREQ" src="https://github.com/user-attachments/assets/243b48c3-01d7-4976-bea5-f6db43c4e72b" />
+<br><br>
+
+##Get User Notifications (GET Request)
+<img width="1019" alt="getREQ" src="https://github.com/user-attachments/assets/c1927ba8-9ea3-495e-b3dc-39c544f43406" />
+<br><br>
+
+##RabbitMQ Queue Usage
+<img width="700" alt="sendingtorabbitmq" src="https://github.com/user-attachments/assets/d93ad7c4-50bd-4e81-aab7-9df498abd611" />
+<br><br>
+
+##Retry Mechanism
+<img width="708" alt="Screenshot 2025-05-19 at 4 51 54 AM" src="https://github.com/user-attachments/assets/39bc7d24-f6b8-4f1f-ad7e-94d115793c34" />
+<br><br>
+
+##Handling Invalid Request Types
+<img width="1025" alt="invalidpost" src="https://github.com/user-attachments/assets/d84c214c-184d-411e-863d-bf21f08fe7d4" />
+
+
+
